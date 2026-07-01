@@ -1,3 +1,8 @@
+:root {
+    --light-col: #FFFFFF;
+    --header-col: #black;
+}
+
 img {
     height: 250px;
 }
@@ -14,11 +19,49 @@ a {
 }
 
 header {
-    text-align: left;
-    background-color: aliceblue;
+    text-align: right;
     margin: 30px;
 }
 
 footer{
+    text-align: center;
     border: solid 5px rgb(0, 198, 255);
+    margin: 80px;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "a c"
+    "b c";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--header-col);
+}
+
+.firstbox{
+    grid-area: a;
+    background-color: blue;
+    color: black;
+}
+
+.secondbox{
+    grid-area: b;
+    background-color: white;
+    color: black;
+}
+
+.thirdbox{
+    grid-area: c;
+    background-color: yellow;
+    color: purple;
+}
+
+.box{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: none;
 }
